@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+	.container {
+		width: 765px;
+	}
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+	screen and (min-resolution: 192dpi) and (min-width: 768px),
+	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.hero-page {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/bg-hero-tablet@2x.jpg);
+        background-size: 768px 436px;
+	}
+}
+
+/* ============= Header ============ */

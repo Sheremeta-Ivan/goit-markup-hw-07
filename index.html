@@ -19,19 +19,26 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/mobile.css" />
+		<link rel="stylesheet" href="./css/tablet.css" />
+		<link rel="stylesheet" href="./css/desctop.css" />
 	</head>
 	<body>
 		<header class="navigation">
 			<div class="container header-inner">
+				<a href="./index.html" class="logo link"><span class="sub-logo">Web</span>Studio</a>
 				<nav class="main-nav">
-					<a href="./index.html" class="logo link"><span class="sub-logo">Web</span>Studio</a>
-
 					<ul class="menu-nav list">
-						<li class="item"><a href="./index.html" class="menu-link link current">Studio</a></li>
+						<li class="item"><a href="./index.html" class="menu-link link">Studio</a></li>
 						<li class="item"><a href="./portfolio.html" class="menu-link link">Portfolio</a></li>
 						<li class="item"><a href="" class="menu-link link">Contacts</a></li>
 					</ul>
 				</nav>
+				<button type="button" class="mobile-menu-open js-open-menu">
+					<svg class="mobile-menu-open-icon" width="32" height="32">
+						<use href="./images/spryte.svg#burger-icon"></use>
+					</svg>
+				</button>
 				<address class="main-address">
 					<ul class="contacts list">
 						<li class="item"
@@ -41,12 +48,67 @@
 					</ul>
 				</address>
 			</div>
+			<div class="mobile-menu js-menu-container">
+				<div class="container mobile-menu-container">
+					<button class="mobile-menu-close-btn js-close-menu">
+						<svg class="mobile-menu-close-btn-icon" width="10" height="10">
+							<use href="./images/spryte.svg#close-modal"></use>
+						</svg>
+					</button>
+					<ul class="menu-nav-mobile list">
+						<li class="menu-nav-mobile-item"><a href="./index.html" class="menu-link-mobile link">Studio</a></li>
+						<li class="menu-nav-mobile-item"><a href="./portfolio.html" class="menu-link-mobile link">Portfolio</a></li>
+						<li class="menu-nav-mobile-item"><a href="" class="menu-link-mobile link">Contacts</a></li>
+					</ul>
+
+					<div class="container-list-contacts">
+						<ul class="contacts-mobile list">
+							<li class="contacts-item-phone"
+								><a href="tel:+110001111111" class="contacts-inform-mobile-phone link">+11 (000) 111-11-11</a></li
+							>
+							<li class="contacts-item-mail"
+								><a href="mailto:info@devstudio.com" class="contacts-inform-mobile-mail link">info@devstudio.com</a></li
+							>
+						</ul>
+						<ul class="social-list-mobile list">
+							<li class="social-list-item">
+								<a href="" class="social-list-link">
+									<svg class="social-list-icon" width="16" height="16">
+										<use href="./images/spryte.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-item">
+								<a href="" class="social-list-link">
+									<svg class="social-list-icon" width="16" height="16">
+										<use href="./images/spryte.svg#twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-item">
+								<a href="" class="social-list-link">
+									<svg class="social-list-icon" width="16" height="16">
+										<use href="./images/spryte.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-item">
+								<a href="" class="social-list-link">
+									<svg class="social-list-icon" width="16" height="16">
+										<use href="./images/spryte.svg#linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</header>
 
 		<main>
 			<!------- Hero section -------->
 			<section class="hero-page">
-				<div class="container">
+				<div class="container hero-container">
 					<h1 class="hero-title">Effective Solutions for Your Business</h1>
 					<button type="button" class="button primary" data-modal-open>Order Service</button>
 				</div>
@@ -111,7 +173,7 @@
 			<!------- Work section -------->
 			<section class="work">
 				<div class="container">
-					<h2 class="section-title">What are we doing</h2>
+					<h2 class="section-title-work">What are we doing</h2>
 					<ul class="work-example list">
 						<li class="item">
 							<img src="./images/img_1.jpg" alt="computer" width="360" />
@@ -130,10 +192,16 @@
 			<!------- Team section -------->
 			<section class="team">
 				<div class="container">
-					<h2 class="section-title">Our Team</h2>
+					<h2 class="section-title-team">Our Team</h2>
 					<ul class="team-list list">
 						<li class="item">
-							<img src="./images/team_1.jpg" alt="Mark Guerrero" width="264" height="260" />
+							<img
+								srcset="./images/team_1@2x.jpg 2x"
+								src="./images/team_1.jpg"
+								alt="Mark Guerrero"
+								width="264"
+								height="260"
+							/>
 							<div class="item-descr">
 								<h3 class="subheader-item">Mark Guerrero</h3>
 								<p class="subheader-descr">Product Designer</p>
@@ -170,7 +238,13 @@
 							</div>
 						</li>
 						<li class="item">
-							<img src="./images/team_2.jpg" alt="Tom Ford" width="264" height="260" />
+							<img
+								srcset="./images/team_2@2x.jpg 2x"
+								src="./images/team_2.jpg"
+								alt="Tom Ford"
+								width="264"
+								height="260"
+							/>
 							<div class="item-descr">
 								<h3 class="subheader-item">Tom Ford</h3>
 								<p class="subheader-descr">Frontend Developer</p>
@@ -207,7 +281,13 @@
 							</div>
 						</li>
 						<li class="item">
-							<img src="./images/team_3.jpg" alt="Camila Garcia" width="264" height="260" />
+							<img
+								srcset="./images/team_3@2x.jpg 2x"
+								src="./images/team_3.jpg"
+								alt="Camila Garcia"
+								width="264"
+								height="260"
+							/>
 							<div class="item-descr">
 								<h3 class="subheader-item">Camila Garcia</h3>
 								<p class="subheader-descr">Marketing</p>
@@ -244,7 +324,13 @@
 							</div>
 						</li>
 						<li class="item">
-							<img src="./images/team_4.jpg" alt="Daniel Wilson" width="264" height="260" />
+							<img
+								srcset="./images/team_4@2x.jpg 2x"
+								src="./images/team_4.jpg"
+								alt="Daniel Wilson"
+								width="264"
+								height="260"
+							/>
 							<div class="item-descr">
 								<h3 class="subheader-item">Daniel Wilson</h3>
 								<p class="subheader-descr">UI Designer</p>
@@ -288,7 +374,7 @@
 			<!------- Customers section -------->
 			<section class="customers">
 				<div class="container">
-					<h2 class="section-title">Customers</h2>
+					<h2 class="section-title-customers">Customers</h2>
 					<ul class="customers-list list">
 						<li class="customers-list-item">
 							<a href="" class="customers-list-link">
@@ -460,5 +546,6 @@
 		</div>
 
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
