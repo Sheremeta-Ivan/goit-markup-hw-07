@@ -2,15 +2,121 @@
 	.container {
 		width: 765px;
 	}
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-	screen and (min-resolution: 192dpi) and (min-width: 768px),
-	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.mobile-menu,
+	.mobile-menu-open {
+		display: none;
+	}
+	.menu-nav {
+		display: flex;
+		align-items: center;
+		margin-left: 76px;
+		gap: 40px;
+	}
+	.menu-link {
+		position: relative;
+		display: block;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		color: var(--main-text-color);
+	}
+	.menu-link:hover,
+	.menu-link:focus {
+		color: var(--active-link-color);
+	}
+
+	.current::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		background: #404bbf;
+		border-radius: 2px;
+		bottom: -2px;
+		left: 0;
+	}
+	.main-address {
+		display: block;
+		margin-left: auto;
+		padding-top: 24px;
+		padding-bottom: 10px;
+	}
+	.contacts-inform {
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		color: var(--address-color-link);
+	}
+	.contacts .contacts-inform:hover,
+	.contacts .contacts-inform:focus {
+		color: var(--active-link-color);
+	}
 	.hero-page {
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-			url(../images/bg-hero-tablet@2x.jpg);
-        background-size: 768px 436px;
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero-tablet.jpg);
+	}
+	@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+		screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px) {
+		.hero-page {
+			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+				url(../images/bg-hero-tablet@2x.jpg);
+		}
+	}
+
+	.hero-title {
+		max-width: 496px;
+		font-size: 56px;
+		margin-bottom: 40px;
+	}
+	.quality-list {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 72px 24px;
+	}
+	.quality-item {
+		width: calc((100% - 24px) / 2);
+		align-items: normal;
+	}
+	.subtitle {
+		text-align: left;
+	}
+	.team {
+		padding-top: 96px;
+		padding-bottom: 104px;
+	}
+	.team-list {
+		flex-direction: row;
+		justify-content: center;
+		column-gap: 24px;
+	}
+	.footer-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 552px;
+	}
+	.footer-main {
+		margin-right: 24px;
+		align-items: start;
+	}
+	.footer-subtitle,
+	.form-title-footer,
+	.logo.logo-foot {
+		text-align: left;
+	}
+	.example-form {
+		flex-direction: row;
+		align-items: center;
+		gap: 24px;
+	}
+	.input-footer {
+		width: 264px;
 	}
 }
-
-/* ============= Header ============ */

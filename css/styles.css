@@ -451,7 +451,7 @@ img {
 */
 
 /* ----------------------------------- Portfolio INDEX ---------------------------------------- */
-.portfolio {
+/* .portfolio {
 	padding: 96px 0 120px;
 }
 .nav-list {
@@ -537,7 +537,7 @@ img {
 }
 .img-list .item:hover {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 /* ============ Modal Window ========== */
 .backdrop {
 	position: fixed;
