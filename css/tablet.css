@@ -24,10 +24,7 @@
 		letter-spacing: 0.02em;
 		color: var(--main-text-color);
 	}
-	.menu-link:hover,
-	.menu-link:focus {
-		color: var(--active-link-color);
-	}
+	
 
 	.current::after {
 		content: "";
@@ -55,10 +52,7 @@
 		letter-spacing: 0.02em;
 		color: var(--address-color-link);
 	}
-	.contacts .contacts-inform:hover,
-	.contacts .contacts-inform:focus {
-		color: var(--active-link-color);
-	}
+	
 	.hero-page {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero-tablet.jpg);
 	}
@@ -118,5 +112,19 @@
 	}
 	.input-footer {
 		width: 264px;
+	}
+
+	/* Portfolio */
+	.portfolio {
+		padding-top: 64px;
+		padding-bottom: 96px;
+	}
+	.nav-list {
+		justify-content: center;
+		margin-bottom: 64px;
+	}
+	.img-list {
+		justify-content: space-between;
+		row-gap: 72px;
 	}
 }

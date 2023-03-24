@@ -3,7 +3,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 425px;
-		border: 1px solid tomato;
 	}
 }
 /* ============= Header ============ */
@@ -95,10 +94,7 @@
 	color: #434455;
 }
 
-.menu-link-mobile:hover,
-.menu-link-mobile:focus {
-	color: var(--active-link-color);
-}
+
 .container-list-contacts {
 	margin-top: auto;
 }
@@ -140,16 +136,7 @@
 	padding: 0;
 	cursor: pointer;
 }
-.mobile-menu-close-btn:is(:hover, :focus) {
-	background: #404bbf;
-	border: transparent;
-}
-.mobile-menu-close-btn-icon {
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mobile-menu-close-btn:is(:hover, :focus) .mobile-menu-close-btn-icon {
-	fill: var(--main-color);
-}
+
 
 /* ============= /Header ============ */
 
@@ -165,9 +152,9 @@
 	text-align: center;
 	margin: 0 auto;
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-	screen and (min-resolution: 192dpi) and (min-width: 480px),
-	screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 420px),
+	screen and (min-resolution: 192dpi) and (min-width: 420px),
+	screen and (min-resolution: 2dppx) and (min-width: 420px) {
 	.hero-page {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url(../images/bg-hero-mobile@2x.jpg);
@@ -185,11 +172,6 @@
 	color: var(--main-color);
 	text-transform: capitalize;
 }
-/* @media screen and (max-width: 479px) {
-	.hero-title {
-		font-size: 32px;
-	}
-} */
 
 .button.primary {
 	padding: 16px 32px;
@@ -211,10 +193,7 @@
 	border-radius: 4px;
 }
 
-.button.primary:hover,
-.button.primary:focus {
-	background-color: var(--active-link-color);
-}
+
 
 /* ============= /Hero ============ */
 
@@ -330,10 +309,7 @@
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	background-color: var(--accent-main-color);
 }
-.social-list-link:hover,
-.social-list-link:focus {
-	background-color: var(--active-link-color);
-}
+
 /* ============= /Team ============ */
 
 /* ============= Customers ============ */
@@ -371,12 +347,6 @@
 
 	border: 1px solid var(--icon-main-color);
 	border-radius: 4px;
-}
-.customers-list-link:is(:hover, :focus) {
-	border-color: var(--active-link-color);
-}
-.customers-list-link:is(:hover, :focus) .customers-list-icon {
-	fill: var(--active-link-color);
 }
 
 .customers-list-icon {
@@ -441,9 +411,7 @@
 	width: 40px;
 	height: 40px;
 } 
-.social-media-list-link:is(:hover, :focus) {
-	background-color: var(--footer-active-link);
-} 
+
 .social-media-list-icon {
 	fill: var(--secondary-accent-color);
 }
@@ -502,9 +470,7 @@
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 }
-.submit-footer:is(:hover, :focus) {
-	background-color: var(--active-link-color);
-} 
+
 .submit-footer .icon-send-footer {
 	fill: var(--main-color);
 }
@@ -557,20 +523,13 @@
 	padding: 0;
 	cursor: pointer;
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-	background: #404bbf;
-	border: transparent;
-}
+
 
 .modal-close-btn-icon {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-	fill: var(--main-color);
-}
+
 
 .modal-header {
 	margin-bottom: 16px;
@@ -678,6 +637,50 @@
 	letter-spacing: 0.04em;
 	text-decoration-line: underline;
 	color: #4d5ae5;
+}
+
+
+
+/* ----------------------------------- Portfolio INDEX ---------------------------------------- */
+.portfolio {
+	padding: 48px 0;
+}
+.nav-list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-bottom: 48px;
+}
+.btn-port {
+	display: block;
+	padding: 12px 24px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: var(--accent-main-color);
+	background-color: var(--secondary-accent-color);
+	border: 1px solid var(--third-accent-color);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+.img-descr {
+	padding: 32px 16px;
+	border: 1px solid var(--third-accent-color);
+	border-top: 0;
+	background-color: var(--main-color);
+}
+.img-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 48px;
 }
 
 

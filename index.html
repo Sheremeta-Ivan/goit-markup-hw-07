@@ -56,7 +56,9 @@
 						</svg>
 					</button>
 					<ul class="menu-nav-mobile list">
-						<li class="menu-nav-mobile-item "><a href="./index.html" class="menu-link-mobile link current">Studio</a></li>
+						<li class="menu-nav-mobile-item"
+							><a href="./index.html" class="menu-link-mobile link current">Studio</a></li
+						>
 						<li class="menu-nav-mobile-item"><a href="./portfolio.html" class="menu-link-mobile link">Portfolio</a></li>
 						<li class="menu-nav-mobile-item"><a href="" class="menu-link-mobile link">Contacts</a></li>
 					</ul>
@@ -176,13 +178,13 @@
 					<h2 class="section-title-work">What are we doing</h2>
 					<ul class="work-example list">
 						<li class="item">
-							<img src="./images/img_1.jpg" alt="computer" width="360" />
+							<img srcset="./images/img_1@2x.jpg 2x" src="./images/img_1.jpg" alt="computer" width="360" />
 						</li>
 						<li class="item">
-							<img src="./images/img_2.jpg" alt="double_screen" width="360" />
+							<img srcset="./images/img_2@2x.jpg 2x" src="./images/img_2.jpg" alt="double_screen" width="360" />
 						</li>
 						<li class="item">
-							<img src="./images/img_3.jpg" alt="phone_with_laptop" width="360" />
+							<img srcset="./images/img_3@2x.jpg 2x" src="./images/img_3.jpg" alt="phone_with_laptop" width="360" />
 						</li>
 					</ul>
 				</div>
@@ -468,9 +470,9 @@
 				</div>
 
 				<div class="form-container">
-					<p class ="form-title-footer">Subscribe</p>
+					<p class="form-title-footer">Subscribe</p>
 					<form class="example-form">
-						<input type="email" name="mail" class="input-footer" placeholder="E-mail" required>
+						<input type="email" name="mail" class="input-footer" placeholder="E-mail" required />
 						<button type="submit" class="submit-footer">
 							Subscribe
 							<svg class="icon-send-footer" width="24" height="24">
@@ -479,7 +481,6 @@
 						</button>
 					</form>
 				</div>
-
 			</div>
 		</footer>
 		<!-- /Footer -->
@@ -533,7 +534,12 @@
 					></textarea>
 
 					<div class="checkbox-title">
-						<input type="checkbox" name="contact-form-privacy" id="contact-form-privacy" class="privacy-check hidden-tittle" />
+						<input
+							type="checkbox"
+							name="contact-form-privacy"
+							id="contact-form-privacy"
+							class="privacy-check hidden-tittle"
+						/>
 						<label for="contact-form-privacy" class="checkbox-desr">
 							I accept the terms and conditions of the
 							<a href="#" class="checkbox-desr-link">Privacy Policy</a>
