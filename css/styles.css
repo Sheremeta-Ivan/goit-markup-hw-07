@@ -107,6 +107,15 @@ img {
 .modal-close-btn:focus .modal-close-btn-icon {
 	fill: var(--main-color);
 }
+.contact-form-input:focus {
+	border-color: var(--accent-main-color);
+}
+.contact-form-input:focus + .contact-icon-input {
+	fill: var(--accent-main-color);
+}
+.contact-form-message:focus {
+	border-color: var(--accent-main-color);
+}
 .btn-port:hover,
 .btn-port:focus {
 	background-color: var(--active-link-color);

@@ -1,3 +1,10 @@
+@media screen and (max-width: 767px) {
+	.main-nav,
+	.main-address {
+		display: none;
+	}
+	
+}
 @media screen and (min-width: 768px) {
 	.container {
 		width: 765px;
@@ -24,8 +31,6 @@
 		letter-spacing: 0.02em;
 		color: var(--main-text-color);
 	}
-	
-
 	.current::after {
 		content: "";
 		display: block;
@@ -107,7 +112,6 @@
 	}
 	.example-form {
 		flex-direction: row;
-		align-items: center;
 		gap: 24px;
 	}
 	.input-footer {
